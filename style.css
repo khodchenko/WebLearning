@@ -66,11 +66,8 @@ ol {
     margin-right: auto;
     border: 1px solid #ddd;
     padding: 15px 25px 15px 25px;
-    background-color: #ddd;
-    background-image: url("res/img/background.jpg");
-    background-repeat: no-repeat;
     background-size: 100% auto;
-    background-position: center;
+    background: #fff url("res/img/background.jpg") no-repeat center;
 }
 
 .post-title {
@@ -85,4 +82,12 @@ ol {
 
 .post-text p {
     margin: 0 0 10px 0;
+}
+
+/* Gradient */
+.gradient {
+    width: 600px;
+    height: 800px;
+    background: #fff;
+    background-image: linear-gradient(0, #fff, #333);
 }
