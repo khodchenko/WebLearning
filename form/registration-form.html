@@ -5,13 +5,14 @@
     <meta charset="utf-8">
     <title>Registration</title>
     <link rel="stylesheet" href="style.css">
+    <script src="login_script.js"></script>
 </head>
 
 <body>
     <div class="auth">
         <h1 class="auth-title">Registration</h1>
 
-        <form action="/" method="post">
+        <form action="/" method="post" onsubmit="checkForm()">
             <div class="form-group">
                 <label for="input-name">Name</label>
                 <input type="text" name="name" id="input-name" class="input" placeholder="Enter your name" required>
@@ -37,12 +38,12 @@
             <div class="form-group">
                 <label for="confirm-password">Confirm Password</label>
                 <input type="password" name="confirm_password" id="confirm-password" class="input"
-                    placeholder="Confirm your password" required>
+                    placeholder="Confirm your password" required onsubmit="checkPasswordMatch()">
             </div>
 
-            <legend>City</legend>
             <div class="form-group">
-                <select name="city" class="form-select">
+                <label>City</label>
+                <select name="city" class="form-select" required>
                     <option value="">Select a city</option>
                     <option value="City1">City 1</option>
                     <option value="City2">City 2</option>
@@ -54,7 +55,7 @@
                 <label for="rules_agree">I agree to the terms of use of the site.</label>
             </div>
 
-            <button class="btn" type="submit" disabled>Send</button>
+            <button class="btn" id="send-button" type="submit" >Send</button>
         </form>
     </div>
 
