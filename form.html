@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <h1 class="form-title">Form</h1>
+        <form action="/" method="post">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-group">
+                    <label for="input-name">Name</label>
+                    <input type="text" name="name" id="input-name" class="form-input" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="input-email">Email</label>
+                    <input type="email" name="email" id="input-email" class="form-input" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="input-tel">Phone Number</label>
+                    <input type="tel" name="tel" id="input-tel" class="form-input" placeholder="Enter your phone number" required>
+                </div>
+            </fieldset>
+           
+            <fieldset>
+                <legend>Login Information</legend>
+                <div class="form-group">
+                    <label for="input-password">Password</label>
+                    <input type="password" name="password" id="input-password" class="form-input" placeholder="Enter your password" required>
+                </div>
+            </fieldset>
+    
+            <fieldset>
+                <legend>About You</legend>
+                <div class="form-group">
+                    <label for="input-aboutyou">Tell us about yourself</label>
+                    <textarea name="text" id="input-aboutyou" class="form-textarea" placeholder="Write something about yourself" required></textarea>
+                </div>
+            </fieldset>
+    
+            <fieldset>
+                <legend>City</legend>
+                <div class="form-group">
+                    <select name="city" class="form-select">
+                        <option value="">Select a city</option>
+                        <option value="City 1">City 1</option>
+                        <option value="City 2">City 2</option>
+                    </select>
+                </div>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Gender</legend>
+                <div class="form-group">
+                    <label for="male">
+                        <input type="radio" name="gender" id="male" value="Male" required> Male
+                    </label>
+                    <label for="female">
+                        <input type="radio" name="gender" id="female" value="Female" required> Female
+                    </label>
+                </div>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Profile Photo</legend>
+                <div class="form-group">
+                    <label for="photo">Choose a photo:</label>
+                    <input type="file" name="photo" id="photo" accept="image/*" required>
+                </div>
+            </fieldset>
+    
+            <fieldset>
+                <div class="form-group">
+                    <input type="checkbox" name="rules_agree" id="rules_agree" required>
+                    <label for="rules_agree">I agree to the terms of use of the site.</label>
+                </div>
+            </fieldset>
+
+            <button type="submit">Send</button>
+            <button type="reset">Clear</button>
+        </form>
+        </form>
+    </div>
+</body>
+
+</html>
