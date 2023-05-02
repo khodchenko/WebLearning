@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #121212;
+    background-color: darkcyan;
+}
+
+/* Auth */
+.auth {
+    width: 300px;
+    background-color: #eee;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.auth-title {
+    margin: 0 0 15px;
+    font-size: 40px;
+    color: darkgreen;
+    text-align: center;
+}
+
+/* Input */
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.input {
+    display: block;
+    width: 90%;
+    padding: 8px 10px;
+    border: 1px solid #121212;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.input:focus {
+    outline: 0;
+    background-color: aquamarine;
+}
+
+/* Select */
+
+.form-select {
+    display: block;
+    width: 292px;
+    padding: 8px 10px;
+    border: 1px solid #121212;
+    font-family: inherit;
+    font-size: 15px;
+    background-color: #fff;
+}
+
+/* Button */
+.btn {
+    font-family: inherit;
+    font-size: 15px;
+    display: block;
+    width: 300px;
+}
+.btn:hover {
+background-color: aqua;
+cursor: pointer;
+}
+
+.btn:disabled {
+    font-size: 15px;
+    display: block;
+    width: 300px;
+}

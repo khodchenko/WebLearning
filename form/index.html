@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="auth">
+        <h1 class="auth-title">Registration</h1>
+
+        <form action="/" method="post">
+            <div class="form-group">
+                <label for="input-name">Name</label>
+                <input type="text" name="name" id="input-name" class="input" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="input-email">Email</label>
+                <input type="email" name="email" id="input-email" class="input" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="input-tel">Phone Number</label>
+                <input type="tel" name="tel" id="input-tel" class="input" placeholder="Enter your phone number"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="input-password">Password</label>
+                <input type="password" name="password" id="input-password" class="input"
+                    placeholder="Enter your password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" name="confirm_password" id="confirm-password" class="input"
+                    placeholder="Confirm your password" required>
+            </div>
+
+            <legend>City</legend>
+            <div class="form-group">
+                <select name="city" class="form-select">
+                    <option value="">Select a city</option>
+                    <option value="City1">City 1</option>
+                    <option value="City2">City 2</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <input type="checkbox" name="rules_agree" id="rules_agree" required>
+                <label for="rules_agree">I agree to the terms of use of the site.</label>
+            </div>
+
+            <button class="btn" type="submit" disabled>Send</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

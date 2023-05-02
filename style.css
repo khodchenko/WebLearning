@@ -144,7 +144,7 @@ ol {
     input[type="password"],
     textarea {
     display: block;
-    width: 100%;
+    width: 90%;
     padding: 10px;
     border: 2px solid #ddd;
     border-radius: 5px;
@@ -212,6 +212,7 @@ ol {
     
     label[for="rules_agree"] {
     cursor: pointer;
+    display: inline;
     }
     
 
@@ -222,4 +223,21 @@ ol {
     background-color: #3f87a6;
     color: #fff;
     border: none;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #2e728b;
+        cursor: pointer;
+    }
+
+    button[type="reset"]:hover {
+        background-color: #2e728b;
+        cursor: pointer;
+    }
+
+    button[type="submit"]:disabled{
+        background-color: #333;
+        color: #000;
+        border: 1px solid #333;
+        cursor: not-allowed;
     }
